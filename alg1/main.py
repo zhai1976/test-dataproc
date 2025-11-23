@@ -12,7 +12,7 @@ client=bigquery.Client(location='us-central1')
 query_sql="""
 SELECT distinct city, state_name, current_timestamp() as query_time 
 FROM `ping-project-471703.test.arizona_cities` 
-where county_name='Coconino' and city like 'B%'
+where county_name='Coconino' and city like 'M%'
 """
 
 print("Starting query.....")
